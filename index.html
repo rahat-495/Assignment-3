@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts Link ! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind + Daisy UI CDN ! -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Web Title ! -->
+    <title>Professional-Hockeys-Club</title>
+
+    <!-- Tailwind Additional Styls ! -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "btn-color": '#FF4240',
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- Additional Styles ! -->
+    <style>
+        .font-man{
+            font-family: "Manrope", sans-serif;
+        }
+
+        :root{
+          background-color: white;
+          color: black;
+        }
+
+    </style>
+
+</head>
+    <body class="font-man">
+        
+        <header class="sm:mx-4 mb-24 lg:mb-24 lg:w-[1170px] lg:mx-auto">
+
+            <nav class="py-2 lg:py-8">
+
+              <div class="navbar flex items-center">
+                
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-[#ff4340a9] mt-3 z-[1] p-2 shadow rounded-box w-52">
+                      <li class="hover:underline active:bg-none text-gray-100 text-lg"><a>Home</a></li>
+                      <li class="active:underline hover:bg-none text-gray-100 text-lg" ><a>About</a></li>
+                      <li class="active:underline hover:bg-none text-gray-100 text-lg" ><a>Pages</a></li>
+                      <li class="active:underline hover:bg-none text-gray-100 text-lg" ><a>Blog</a></li>
+                      <li class="active:underline hover:bg-none text-gray-100 text-lg" ><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="font-extrabold bg-none text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#FF4240] hover:underline"><a class="hover:bg-white">Home</a></li>
+                    <li class=" hover:underline"><a class="hover:bg-white hover:text-[#FF4240]">About</a></li>
+                    <li class=" hover:underline"><a class="hover:bg-white hover:text-[#FF4240]">Pages</a></li>
+                    <li class=" hover:underline"><a class="hover:bg-white hover:text-[#FF4240]">Blog</a></li>
+                    <li class=" hover:underline"><a class="hover:bg-white hover:text-[#FF4240]">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="navbar-end flex gap-6 cursor-pointer">
+                  <img class="hidden lg:hover:opacity-75 lg:block" src="Images/Frame.png" alt="">
+                  <a class="active:scale-95 bg-btn-color flex items-center justify-center rounded-lg py-4 px-6 text-xl font-bold text-white">Get Ticket</a>
+                </div>
+
+              </div>
+
+            </nav>
+
+            <!-- carusel container ! -->
+            <div class="carousel mx-4 w-[395px] h-[450px] lg:mx-0 lg:h-[550px] lg:w-[100%]">
+
+              <div id="slide1" class="carousel-item relative mr-1 w-full lg:m-auto lg:relative lg:w-full lg:h-full">
+
+                <img src="Images/1.png" class="h-[200px] lg:h-full lg:w-full" />
+
+                <div class="absolute flex gap-4 justify-end top-[33%] left-[37%] lg:justify-normal
+                 lg:left-5 lg:right-5 lg:top-[86%]">
+                  <a href="#slide4" class="btn btn-circle text-xl text-white">❮</a> 
+                  <a href="#slide2" class="btn btn-circle text-xl text-white">❯</a>
+                </div>
+
+                <div class="p-8 flex top-[230px] flex-col space-y-4 absolute lg:top-[360px] lg:left-[572px] bg-[#131318] rounded-2xl">
+                  <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                  <p class="lg:w-[502px] mx-auto text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+              </div> 
+
+              <div id="slide2" class="carousel-item relative mr-1 w-full lg:w-full">
+
+                <img src="Images/1.png" class="h-[200px] lg:h-full" />
+
+                <div class="absolute flex gap-4 justify-end top-[33%] left-[37%] lg:justify-normal
+                lg:left-5 lg:right-5 lg:top-[86%]">
+                  <a href="#slide1" class="btn btn-circle text-xl text-white">❮</a> 
+                  <a href="#slide3" class="btn btn-circle text-xl text-white">❯</a>
+                </div>
+
+                <div class="p-8 flex top-[230px] flex-col space-y-4 absolute lg:top-[360px] lg:left-[572px] bg-[#131318] rounded-2xl">
+                  <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                  <p class="lg:w-[502px] mx-auto text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+              </div> 
+
+              <div id="slide3" class="carousel-item relative mr-1 w-full lg:w-full">
+
+                <img src="Images/1.png" class="h-[200px] lg:h-full" />
+
+                <div class="absolute flex gap-4 justify-end top-[33%] left-[37%] lg:justify-normal
+                lg:left-5 lg:right-5 lg:top-[86%]">
+                  <a href="#slide2" class="btn btn-circle text-xl text-white">❮</a> 
+                  <a href="#slide4" class="btn btn-circle text-xl text-white">❯</a>
+                </div>
+
+                <div class="p-8 flex top-[230px] flex-col space-y-4 absolute lg:top-[360px] lg:left-[572px] bg-[#131318] rounded-2xl">
+                  <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                  <p class="lg:w-[502px] mx-auto text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+              </div> 
+
+              <div id="slide4" class="carousel-item relative mr-1 w-full lg:w-full">
+
+                <img src="Images/1.png" class="h-[200px] lg:h-full" />
+
+                <div class="absolute flex gap-4 justify-end top-[33%] left-[37%] lg:justify-normal
+                lg:left-5 lg:right-5 lg:top-[86%]">
+                  <a href="#slide3" class="btn btn-circle text-xl text-white">❮</a> 
+                  <a href="#slide1" class="btn btn-circle text-xl text-white">❯</a>
+                </div>
+
+                <div class="p-8 flex top-[230px] flex-col space-y-4 absolute lg:top-[360px] lg:left-[572px] bg-[#131318] rounded-2xl">
+                  <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                  <p class="lg:w-[502px] mx-auto text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+              </div> 
+
+            </div>
+
+        </header>
+
+        <main class="lg:w-[1170px] lg:mx-auto">
+
+          <!-- Professional Hockeys Club Section ! -->
+          <section class="mx-4 mb-24 lg:mx-0 lg:mb-24">
+
+            <!-- Text div ! -->
+            <div class="mb-6 lg:mb-12 py-8 border-t-2 border-b-2 border-dashed border-[#13131833] lg:border-t-2 lg:border-b-2 lg:border-dashed lg:border-[#13131833] lg:py-8">
+
+              <h1 class="text-[#131318] text-2xl mb-6 text-center font-extrabold lg:text-4xl lg:mb-6">Professional Hockeys Club</h1>
+              <p class="text-[#13131899] text-center font-medium lg:w-[607px] lg:mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+            </div>
+
+            <!-- Persentench div ! -->
+            <div class="grid grid-cols-1 space-y-6 gap-8 lg:grid lg:space-y-0 lg:grid-cols-4 lg:gap-8">
+
+              <!-- f1 div ! -->
+              <div class="flex flex-col lg:flex lg:flex-col items-center">
+
+                <div style="background-image: url('Images/persecnt-icons/Group\ 9.png');" class="bg-no-repeat flex items-center justify-center lg:bg-no-repeat lg:flex lg:items-center lg:justify-center text-[#131318] h-[120px] w-[120px] text-2xl font-extrabold mb-6 lg:text-[#131318] lg:text-2xl lg:font-extrabold lg:mb-6 lg:h-[120px] lg:w-[120px]" style="--value:70;" role="progressbar">
+                  87%
+                </div>
+
+                <h4 class="text-center text-[#131318] mb-4 font-semibold text-xl lg:text-[#131318] lg:text-center lg:font-semibold lg:text-xl lg:mb-4">Prayer Facility</h4>
+                <p class="text-[#13131899] w-[250px] text-center lg:text-center lg:w-[250px] lg:text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+              </div>
+
+              <!-- f2 div ! -->
+              <div class="flex flex-col lg:flex lg:flex-col items-center">
+
+                <div style="background-image: url('Images/persecnt-icons/Group\ 9\ \(1\).png');" class="bg-no-repeat flex items-center justify-center lg:bg-no-repeat lg:flex lg:items-center lg:justify-center text-[#131318] h-[120px] w-[120px] text-2xl font-extrabold mb-6 lg:text-[#131318] lg:text-2xl lg:font-extrabold lg:mb-6 lg:h-[120px] lg:w-[120px]" style="--value:70;" role="progressbar">
+                  95%
+                </div>
+
+                <h4 class="text-center text-[#131318] mb-4 font-semibold text-xl lg:text-[#131318] lg:text-center lg:font-semibold lg:text-xl lg:mb-4">Experienced Coach</h4>
+                <p class="text-[#13131899] w-[250px] text-center lg:text-center lg:w-[250px] lg:text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+              </div>
+
+              <!-- f3 div ! -->
+              <div class="flex flex-col lg:flex lg:flex-col items-center">
+
+                <div style="background-image: url('Images/persecnt-icons/Group\ 9\ \(2\).png');" class="bg-no-repeat flex items-center justify-center lg:bg-no-repeat lg:flex lg:items-center lg:justify-center text-[#131318] h-[120px] w-[120px] text-2xl font-extrabold mb-6 lg:text-[#131318] lg:text-2xl lg:font-extrabold lg:mb-6 lg:h-[120px] lg:w-[120px]" style="--value:70;" role="progressbar">
+                  90%
+                </div>
+
+                <h4 class="text-center text-[#131318] mb-4 font-semibold text-xl lg:text-[#131318] lg:text-center lg:font-semibold lg:text-xl lg:mb-4">Senior Player</h4>
+                <p class="text-[#13131899] w-[250px] text-center lg:text-center lg:w-[250px] lg:text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+              </div>
+
+              <!-- f4 div ! -->
+              <div class="flex flex-col lg:flex lg:flex-col items-center">
+
+                <div style="background-image: url('Images/persecnt-icons/Group\ 9\ \(3\).png');" class="bg-no-repeat flex items-center justify-center lg:bg-no-repeat lg:flex lg:items-center lg:justify-center text-[#131318] h-[120px] w-[120px] text-2xl font-extrabold mb-6 lg:text-[#131318] lg:text-2xl lg:font-extrabold lg:mb-6 lg:h-[120px] lg:w-[120px]" style="--value:70;" role="progressbar">
+                  80%
+                </div>
+
+                <h4 class="text-center text-[#131318] mb-4 font-semibold text-xl lg:text-[#131318] lg:text-center lg:font-semibold lg:text-xl lg:mb-4">Training Ground</h4>
+                <p class="text-[#13131899] w-[250px] text-center lg:text-center lg:w-[250px] lg:text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- Program Sections ! -->
+          <section class="my-12 mx-4 lg:mx-0 lg:my-12">
+
+            <!-- Text div ! -->
+            <div class="mb-6 lg:mb-12 py-8 border-t-2 border-b-2 border-dashed border-[#13131833] lg:border-t-2 lg:border-b-2 lg:border-dashed lg:border-[#13131833] lg:py-8">
+
+              <h1 class="text-[#131318] text-2xl mb-6 text-center font-extrabold lg:text-4xl lg:mb-6">Program Sections</h1>
+              <p class="text-[#13131899] text-center font-medium lg:w-[607px] lg:mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+            </div>
+
+            <!-- Grid 3 Container ! -->
+            <div class="grid grid-cols-1 lg:grid lg:grid-cols-2">
+              
+              <!-- frist card ! -->
+              <div class="card my-2 rounded-2xl  lg:w-[573px] lg:h-[338px] lg:mb-4">
+
+                <div class="card-body relative lg:relative lg:justify-center ">
+                  <img class="absolute inset-0 object-cover h-full w-full rounded-2xl z-0 lg:absolute lg:inset-0 lg:object-cover lg:h-full lg:w-full lg:z-0" src="Images/2.png" alt="Shoes" />
+
+                  <div class="w-full h-full rounded-2xl absolute bg-gray-900 bg-opacity-40 inset-0 lg:w-full lg:h-full lg:absolute lg:bg-gray-900 lg:bg-opacity-40 lg:inset-0 lg:rounded-2xl"></div>
+                    
+                  <h2 class="card-title text-white text-3xl font-extrabold mb-4 z-10 lg:text-white lg:text-3xl lg:font-extrabold lg:mb-4 lg:z-10 lg:relative lg:top-[65px]">Junior Program</h2>
+                  <p class="font-medium leading-7 z-10 relative top-[-10px] text-white lg:w-[495px] lg:font-medium lg:leading-7 lg:text-white lg:z-10 lg:relative lg:top-[50px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+                  <div class="z-10">
+                    <button class="btn btn-primary active:scale-95 bg-btn-color flex items-center justify-center rounded-lg text-xl font-bold text-white border-none hover:bg-btn-color">Register Now!</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- second card ! -->
+              <div class="card my-2 rounded-2xl  lg:w-[573px] lg:h-[338px] lg:mb-4 lg:ml-3">
+
+                <div class="card-body relative lg:relative lg:justify-center ">
+                  <img class="absolute inset-0 object-cover h-full w-full rounded-2xl z-0 lg:absolute lg:inset-0 lg:object-cover lg:h-full lg:w-full lg:z-0" src="Images/3.png" alt="Shoes" />
+
+                  <div class="w-full h-full rounded-2xl absolute bg-gray-900 bg-opacity-40 inset-0 lg:w-full lg:h-full lg:absolute lg:bg-gray-900 lg:bg-opacity-40 lg:inset-0 lg:rounded-2xl"></div>
+                    
+                  <h2 class="card-title text-white text-3xl font-extrabold mb-4 z-10 lg:text-white lg:text-3xl lg:font-extrabold lg:mb-4 lg:z-10 lg:relative lg:top-[65px]">Teenager Program</h2>
+                  <p class="font-medium leading-7 z-10 relative top-[-10px] text-white lg:w-[495px] lg:font-medium lg:leading-7 lg:text-white lg:z-10 lg:relative lg:top-[50px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+                  <div class="z-10">
+                    <button class="btn btn-primary active:scale-95 bg-btn-color flex items-center justify-center rounded-lg text-xl font-bold text-white border-none hover:bg-btn-color">Register Now!</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- third card ! -->
+              <div class="card my-2 rounded-2xl  lg:col-span-2 lg:w-[1170px] lg:h-[450px] ">
+
+                <div class="card-body relative  lg:relative lg:justify-center">
+                  <img class="absolute inset-0 object-cover h-full w-full rounded-2xl z-0 lg:absolute lg:inset-0 lg:object-cover lg:h-full lg:w-full lg:z-0" src="Images/4.png" alt="Shoes" />
+
+                  <div class="w-full h-full rounded-2xl absolute bg-gray-900 bg-opacity-40 inset-0 lg:w-full lg:h-full lg:absolute lg:bg-gray-900 lg:bg-opacity-40 lg:inset-0 lg:rounded-2xl"></div>
+                    
+                  <h2 class="card-title text-white text-3xl font-extrabold mb-4 z-10 lg:text-white lg:text-3xl lg:font-extrabold lg:mb-4 lg:z-10 lg:relative lg:top-[171px]">Professional Program</h2>
+                  <p class="font-medium leading-7 z-10 relative top-[-10px] text-white lg:w-[495px] lg:font-medium lg:leading-7 lg:text-white lg:z-10 lg:relative lg:top-[160px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+                  <div class="z-10">
+                    <button class="btn btn-primary active:scale-95 bg-btn-color flex items-center justify-center rounded-lg text-xl font-bold text-white border-none hover:bg-btn-color">Register Now!</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- New Product section ! -->
+          <section class="my-12 mx-4 lg:mx-0 lg:my-12">
+
+            <!-- Text div ! -->
+            <div class="mb-6 lg:my-12 py-8 border-t-2 border-b-2 border-dashed border-[#13131833] lg:border-t-2 lg:border-b-2 lg:border-dashed lg:border-[#13131833] lg:py-8">
+
+              <h1 class="text-[#131318] text-2xl mb-6 text-center font-extrabold lg:text-4xl lg:mb-6">Our New Products</h1>
+              <p class="text-[#13131899] text-center font-medium lg:w-[607px] lg:mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+
+            </div>
+
+            <!-- Cards Container ! -->
+            <div class="grid grid-cols-1 grid-rows-1 gap-6 lg:gap-6 lg:grid lg:grid-cols-2 lg:grid-rows-3">
+
+              <!-- Frist card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/5.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 4.png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- second card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/6.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 8.png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- third card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/7.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 4 (1).png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- 4th card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/8.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 4 (2).png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- 5th card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/9.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 4 (3).png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- 6th card ! -->
+              <div class="transition-all ease-in-out border-[#1313181A] rounded-2xl border-2 lg:rounded-2xl lg:border-[#1313181A] lg:cursor-pointer lg:border-2 lg:p-6 lg:hover:border-[#13131854]">
+
+                <div class="hero-content items-start flex-col lg:h-[207px] lg:items-start lg:flex-row">
+                  
+                  <img src="Images/10.png" class="max-w-sm hidden rounded-lg shadow-2xl cursor-pointer lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:block" />
+
+                  <img src="Images/mobile/Rectangle 4 (4).png" class="w-full block rounded-lg shadow-2xl cursor-pointer mb-6 lg:max-w-sm lg:rounded-lg lg:shadow-2xl lg:cursor-pointer lg:hidden lg:w-[287px]" />
+
+                  <div>
+
+                    <div class="flex items-center gap-4 mb-3 cursor-pointer">
+                      
+                      <div class="flex gap-2">
+                        <img src="Images/Frame-u.png" alt="">
+                        <p class="font-medium text-[#13131880]">5.0</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (1).png" alt="">
+                        <p class="font-medium text-[#13131880]">20</p>
+                      </div>
+
+                      <div class="flex gap-2">
+                        <img src="Images/Frame (2).png" alt="">
+                        <p class="font-medium text-[#13131880]">200</p>
+                      </div>
+
+                    </div>
+
+                    <h1 class="text-xl font-bold text-[#131318] mb-3">Box Office News!</h1>
+                    <p class="py-6 text-[#13131899] mb-4 -mt-8 text-base lg:mb-4 lg:-mt-8 lg:text-base lg:py-6 lg:-[306px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex flex-col items-start justify-between space-y-3 -mt-2 lg:space-y-0 lg:flex lg:flex-row lg:items-center lg:justify-between lg:-mt-2">
+
+                      <p class="text-btn-color font-extrabold text-lg cursor-pointer">Price - $22.00</p>
+
+                      <div class="flex items-center gap-2 cursor-pointer">
+                        <img src="Images/buy.png" alt=""> 
+                        <p class="text-[#13131880] font-medium">Delivery Fee : Free</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- Clients Question Section ! -->
+          <section class="my-12 mx-4 lg:mx-0 lg:my-28">
+
+            <!-- Text div ! -->
+            <div class="mb-6 lg:my-12 py-8 border-t-2 border-b-2 border-dashed border-[#13131833] lg:border-t-2 lg:border-b-2 lg:border-dashed lg:border-[#13131833] lg:py-8">
+
+              <h1 class="text-[#131318] text-2xl mb-6 text-center font-extrabold lg:text-4xl lg:mb-6">Clients Question</h1>
+              <p class="text-[#13131899] text-center font-medium lg:w-[607px] lg:mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+            </div>
+
+            <!-- Question container ! -->
+
+              <div class="hero border-2 py-8 px-1 border-[#1313181A] rounded-2xl lg:border-[#1313181A] lg:rounded-2xl  lg:p-8">
+
+                <div class="hero-content py-0 px-4 flex-col w-[380px] lg:flex-row lg:gap-10 lg:p-0 lg:w-full lg:items-center lg:justify-between">
+
+                  <img src="Images/11.png" class="w-[22rem] lg:max-w-sm lg:rounded-lg lg:flex lg:flex-1" />
+
+                  <!-- Accordian div ! -->
+                  <div class="flex flex-col flex-1 lg:-mt-3">
+                    
+                    <!-- frist div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Our Equipment
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    <!-- 2nd div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Our Equipment
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    <!-- 3rd div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Private Lessons
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    <!-- 4th div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Ski Touring
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    <!-- 5th div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Booking
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    <!-- 6th div -->
+                    <div class="collapse collapse-plus rounded-none border-[#1313181A] border-b-2">
+
+                      <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+                      <div class="collapse-title text-xl font-bold">
+                        Pricings
+                      </div>
+
+                      <div class="collapse-content"> 
+                        <p class="lg:w-[518px] lg:text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+
+                    </div>
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+
+          </section>
+
+          <!-- Get In Touch Section ! -->
+          <section class="">
+
+            
+
+          </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
